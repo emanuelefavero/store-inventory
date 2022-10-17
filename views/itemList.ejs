@@ -1,0 +1,18 @@
+<!-- HEADER -->
+<%- include('./partials/header.ejs') %>
+
+<h1><%= title %></h1>
+
+<a href="/">Go Home</a>
+
+<ul>
+  <!-- Loop through itemList -->
+  <% itemList.forEach((item) => { %>
+  <li>
+    <a href="<%= item.url %>"> <%= item.name %> </a>
+    <% }) %>
+  </li>
+</ul>
+
+<!-- FOOTER -->
+<%- include('./partials/footer.ejs') %>
